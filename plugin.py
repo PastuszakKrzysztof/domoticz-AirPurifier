@@ -34,10 +34,8 @@ import datetime
 import socket
 import subprocess
 import site
-path=''
-path=site.getsitepackages()
-for i in path:
-    sys.path.append(i)
+path='/home/pi/.local/lib/python3.7/site-packages/'
+sys.path.append(path)
 
 import miio.airpurifier
 
